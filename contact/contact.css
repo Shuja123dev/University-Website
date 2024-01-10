@@ -98,7 +98,7 @@ html {
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: antiquewhite;
+    color: white;
     border: 1px solid #fff;
     padding: 12px 34px;
     font-size: 1rem;
@@ -114,7 +114,13 @@ html {
     background: #f44336;
     transition: 1s;
 
+    color: white;
 
+}
+
+.contact-links-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media(max-width:700px) {
@@ -122,4 +128,34 @@ html {
         font-size: 24px;
 
     }
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: auto;
+}
+
+.c-link-flex {
+    display: flex;
+}
+
+.c-link-image {
+    background-color: rgba(255, 0, 0, 0.655);
+    padding: 17px 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-right: 24px;
+}
+
+.contact-link-sub {
+    width: 33.3%;
+}
+
+.contact-links {
+    margin-bottom: 130px;
 }
