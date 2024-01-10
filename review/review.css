@@ -1,0 +1,158 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.navText {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+
+.navText:hover {
+    color: #d61726;
+    text-decoration: underline;
+    /* Add underlines on hover */
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.logo {
+    flex: 1;
+    padding: 5px;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Offset-x, offset-y, blur-radius, color */
+
+}
+
+.homepageContainer {
+    flex: 6;
+    background-color: #f5f5f5;
+}
+
+.footer {
+    flex: 2;
+}
+
+.logoStyle {
+    height: 5rem;
+
+}
+
+.navOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    font-size: 24px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.divider {
+    width: 40%;
+    height: 2px;
+    background-color: #d9d3d3;
+    /* You can set the color of the divider */
+}
+
+/* ////////////////////////review///////////////////////// */
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    margin-left: 7px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testimonials-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonials-col p {
+    padding: 0;
+}
+
+.testimonials-col .fa {
+    color: chocolate;
+}
+
+@media(max-width: 700px) {
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+
+}
+
+/* /////////////////////////////reviewFormSection///////////////////// */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.review-form input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.review-form button {
+    background-color: #f44336;
+    /* background-color: #4caf50; */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}

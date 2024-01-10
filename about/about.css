@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.navText {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+
+.navText:hover {
+    color: #d61726;
+    text-decoration: underline;
+    /* Add underlines on hover */
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.logo {
+    flex: 1;
+    padding: 5px;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Offset-x, offset-y, blur-radius, color */
+
+}
+
+.homepageContainer {
+    flex: 6;
+    background-color: #f5f5f5;
+    display: flex;
+}
+
+.footer {
+    flex: 2;
+}
+
+.footer h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.logoStyle {
+    height: 5rem;
+
+}
+
+.navOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    font-size: 24px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.divider {
+    width: 40%;
+    height: 2px;
+    background-color: #d9d3d3;
+    /* You can set the color of the divider */
+}
+
+.aboutUsContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    gap: 4px;
+}
+
+.aboutUsImage {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImageStyle {
+    height: 10rem
+}
+
+/* ////////////////////aboutSection/////////////////// */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 200;
+
+}
+
+.icon span {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
