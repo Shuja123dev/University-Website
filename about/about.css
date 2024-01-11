@@ -27,7 +27,7 @@ html {
     margin-bottom: 4rem;
 }
 
-.goto {
+.goto.animated {
     display: flex;
     margin: auto;
     justify-content: space-between;
@@ -48,21 +48,20 @@ html {
 
 .count-fst {
     position: relative;
-    margin: 0 4rem;
 }
 
-
+/* 
 .count-fst::after {
     position: absolute;
     content: "";
     width: 1px;
     height: 60px;
     top: 20px;
-    background: #e13535;
+    background: #95BF46;
     right: -60px;
     bottom: 0;
     margin: auto;
-}
+} */
 
 .count-fst div:last-child {
     font-family: 'Montserrat';
@@ -106,10 +105,6 @@ div#numbers .div {
     opacity: 0.8;
 }
 
-.text-center.text-muted {
-    margin: 0;
-}
-
 /* 
 .count-fst::after {
     position: absolute;
@@ -130,11 +125,16 @@ div#numbers .div {
 }
 
 .navbar {
-    flex: 1;
     display: flex;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    /* Offset-x, offset-y, blur-radius, color */
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+}
 
+.navText {
+    margin: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .homepageContainer {
@@ -143,6 +143,9 @@ div#numbers .div {
     display: flex;
 }
 
+.footer {
+    flex: 2;
+}
 
 .footer h1 {
     font-size: 3.5rem;
@@ -207,6 +210,7 @@ div#numbers .div {
 .footer {
     width: 100%;
     text-align: center;
+    padding: 30px 0;
 
 }
 

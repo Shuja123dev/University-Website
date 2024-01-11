@@ -29,11 +29,16 @@ html {
 }
 
 .navbar {
-    flex: 1;
     display: flex;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    /* Offset-x, offset-y, blur-radius, color */
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+}
 
+.navText {
+    margin: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .homepageContainer {
@@ -45,9 +50,7 @@ html {
 }
 
 .footer {
-    width: 100%;
-    text-align: center;
-
+    flex: 2;
 }
 
 .logoStyle {
@@ -105,4 +108,154 @@ html {
 
 .mainImageStyle {
     height: 10rem
+}
+
+/* ///////////////////////bannerSection////////////////////////// */
+.banner {
+    background-color: #e60000;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Images//pexels-marta-siedlecka-586570.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-box {
+    background-color: #d61726;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    margin-left: 6rem;
+    flex-direction: column;
+}
+
+.home-box p {
+    color: white;
+    font-size: 1rem;
+    margin: 1.5rem 0rem;
+}
+
+.box-line {
+    width: 9rem;
+    margin: 3rem 1rem 0rem;
+    height: 2px;
+    background-color: white;
+}
+
+
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(226, 0, 0, 0.7);
+
+}
+
+.uni-para {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(223, 219, 219);
+}
+
+/* //////////////////////campusSection////////////////////// */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+.campus-col {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    border-radius: 1rem;
+    min-height: 200px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* ///////////////////////////facilitiesSection//////////////////////// */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.facilities-col {
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.facilities-col p {
+    padding: 0;
+
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
 }

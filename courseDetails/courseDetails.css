@@ -29,11 +29,16 @@ html {
 }
 
 .navbar {
-    flex: 1;
     display: flex;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    /* Offset-x, offset-y, blur-radius, color */
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+}
 
+.navText {
+    margin: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .homepageContainer {
